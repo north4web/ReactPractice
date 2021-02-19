@@ -108,22 +108,22 @@ class State extends React.Component {
                 {/* <h2 style={{color: this.state.color}}><span id = "sq">{this.state.count}</span></h2> */}
                 
                 <div id="myDisplay">
-                <button className='inc' onClick={this.handleClickDec}>&lt;&lt; </button>
+                <button className='dec' onClick={this.handleClickDec}>&lt;&lt; </button>
                 <input id='myInput' value={this.state.count} placeholder='Enter a number' onChange={this.updateNumber}/>
         
                 <button className='inc' disabled={this.state.disabled} onClick={this.handleClickInc}>&gt;&gt;</button>
                 </div>
                 <br />
-            <button id='reset' onClick={this.handleClickReset}>Reset</button>
+            <button id='reset' onClick={this.handleClickReset}>&nbsp;Reset</button>
                 <br />
                 
                 
                 
-                <button className='oper' onClick={this.handleClickDouble}>x*2</button>         
+                <button className='oper-l' onClick={this.handleClickDouble}>x*2</button>         
                 <button className='oper' onClick={this.handleClickHalf}>x/2</button>
                
                 <button className='oper' onClick={this.handleClickSquare}>x<sup>2</sup></button>
-                <button className='oper' onClick={this.handleClickSquareRoot}>&radic;x</button>
+                <button className='oper-r' onClick={this.handleClickSquareRoot}>&radic;x</button>
             <br />
                 <hr />
               

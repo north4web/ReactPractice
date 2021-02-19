@@ -19,8 +19,9 @@ border-radius: 5%;
     text-align : center;
     height: 30px;
     width: 100px;
-    border-radius: 5%;
+    border-radius: 0%;
     margin: 1px;
+    border: 2px solid black;
 }
 
 #myInput::placeholder {
@@ -30,25 +31,44 @@ border-radius: 5%;
 button {
     margin: 1px;
     background-color: gold;
-    border-radius: 5%;
+    border-radius: 0%;
+    border: 2px solid black;
 }
 
 #reset {
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
     background-color: rgb(169, 225, 233);
-    border-radius: 0%;
-    width: 177px;
+    width: 176px;
+}
+
+.dec {
+    background-color: rgb(195, 248, 160);
+    /* margin-left: -5px;
+    margin-right: -5px; */
+    border-radius: 70% 0% 0% 0%;
 }
 
 .inc {
     background-color: rgb(195, 248, 160);
     /* margin-left: -5px;
     margin-right: -5px; */
-    border-radius: 0%;
+    border-radius: 0% 70% 0% 0%;
 }
 
 
 .oper {
-    width: 43px;
+    width: 42.5px;
+}
 
+.oper-l {
+    width: 42.5px;
+    border-radius: 0% 0% 0% 70%;
+}
 
+.oper-r {
+    width: 42.5px;
+    border-radius: 0% 0% 70% 0%;
 }
