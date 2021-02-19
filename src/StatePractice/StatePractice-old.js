@@ -1,3 +1,5 @@
+//this shows how I changed from old class to new class (without sonctructor and bind)
+
 import React from 'react'
 import Header from '../Header/Header'
 import randomcolor from 'randomcolor'
@@ -6,12 +8,24 @@ import './Style3.css'
 
 
 class State extends React.Component {
+    // constructor() {
+    //     super()
         state = {
 
-            count: 0,
-            color:'',
-            // disabled: true
+            count: '',
+            color:''
         }
+        // this.handleClickInc = this.handleClickInc.bind(this)
+        // this.handleClickDec = this.handleClickDec.bind(this)
+        // this.handleClickDouble = this.handleClickDouble.bind(this)
+        // this.handleClickHalf = this.handleClickHalf.bind(this)
+        // this.handleClickSquare = this.handleClickSquare.bind(this)
+        // this.handleClickSquareRoot = this.handleClickSquareRoot.bind(this)
+        // this.handleClickReset = this.handleClickReset.bind(this)
+
+    // }
+
+//I also modified all this methods into arrow function)
 
     handleClickInc = () => {
         this.setState(prevState => {
@@ -84,7 +98,6 @@ class State extends React.Component {
 
     updateNumber = (e) => {
         this.setState({count: e.target.value})
-        // this.setState({disabled:false})
     }
 
 
@@ -113,7 +126,7 @@ class State extends React.Component {
                 <button className='inc' onClick={this.handleClickDec}>&lt;&lt; </button>
                 <input id='myInput' value={this.state.count} placeholder='Enter a number' onChange={this.updateNumber}/>
         
-                <button className='inc' disabled={this.state.disabled} onClick={this.handleClickInc}>&gt;&gt;</button>
+                <button className='inc' onClick={this.handleClickInc}>&gt;&gt;</button>
                 </div>
                 <br />
             <button id='reset' onClick={this.handleClickReset}>Reset</button>
@@ -129,18 +142,9 @@ class State extends React.Component {
             <br />
                 <hr />
               
-                
-
-               
-
-
                 <p>This is the code (just for one operation and basic):</p>
 
-first part<br/>
-<img src='Images/numbers-1.png' width='720' alt=''/>
-<br/>
-second part<br/>
-<img src='Images/numbers-2.png' width='720' alt=''/>
+<img src='Images/states-code.png' width='720' alt=''/>
 
             </div>
         )
