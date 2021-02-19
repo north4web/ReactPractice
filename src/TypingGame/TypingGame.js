@@ -14,6 +14,7 @@ function App() {
     const [countStyle, setCountStyle] = useState("hidden")
 
     const textBoxRef = useRef(null)
+    const inputRef = useRef(null)
 
     function handleChange(e) {
         const { value } = e.target
@@ -22,9 +23,16 @@ function App() {
 
     function handleChange2(e) {
         const tt = e.target.value
+        // if (tt === 0) {
+        //     setIsTimeRunning(false)
+        // }
+
         setTimeRemaining(tt)
         setWordCount(0)
         setTime(tt)
+        setCountStyle("hidden")
+        setIsTimeRunning(false)
+        setText("")
     }
 
     function calculateWordCount(text) {
@@ -45,7 +53,7 @@ function App() {
     function endGame() {
         setIsTimeRunning(false)
         setWordCount(calculateWordCount(text))
-        setTimeRemaining(10)
+        setTimeRemaining(0)
         setCountStyle(null)
 
     }
@@ -69,16 +77,28 @@ function App() {
                 <h1>How fast do you type?</h1>
                 <br />
 
-         Challenge time:&nbsp;
+         Challenge time in seconds:&nbsp;
+    
          <input
                     id='ii'
                     value={timeRemaining}
                     type='number'
                     name='time'
+                    step="5"
+                    min="0"
+                    disabled={isTimeRunning}
                     onChange={handleChange2}
-                />
-        &nbsp;seconds
+                /> &nbsp;
+        <button
+                    id='bb'
+                    onClick={startGame}
+                    disabled={timeRemaining===0 || isTimeRunning ? true : false}
+                >
+                    Start
+            </button>
+                <h1 className='middle' id={countStyle}> <span style={{color: "white"}}>{wordCount}</span> words in <span style={{color: "white"}}>{time} </span>seconds !</h1>
 
+<br />
             <textarea
                     ref={textBoxRef}
                     onChange={handleChange}
@@ -90,15 +110,7 @@ function App() {
 
 
                 <br />
-                <button
-                    id='bb'
-                    onClick={startGame}
-                    disabled={isTimeRunning}
-                >
-                    Start
-            </button>
-                <h1 className='middle' id={countStyle}> <span style={{color: "gray"}}>{wordCount}</span> words in <span style={{color: "gray"}}>{time} </span>seconds !</h1>
-
+                
 
             </main>
         </div>

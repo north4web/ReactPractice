@@ -85,8 +85,6 @@ function TypingGame() {
 
                 >Start</button>
 
-
-
                 <h1>Word Count: {wordCount}</h1>
 
 
