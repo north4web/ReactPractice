@@ -7,14 +7,12 @@ import Header from '../Header/Header'
 
 function JokeDisplay() {
 
-
-
   return (
     <div className="item">
       <Header />
 
       <p class='center'>VERSION 1 - SIMPLE</p>
-      
+
 
       <JokeCard
         punchLine="It’s hard to explain puns to kleptomaniacs because they always take things literally."
@@ -38,18 +36,22 @@ function JokeDisplay() {
         question="Did you hear about the actor who fell through the floorboards?"
         punchLine="He was just going through a stage."
       />
-      < br />
-<p>This is the code for this version:</p>
-      <img src='Images/jokeDisplay1.png' width='720'/>
-< br/>
-      <p>This code is the same for version 1 and 2:</p>
-      <img src='Images/jokeCard-code.png' width='720'/>
+      < hr />
 
+      <div style={{ textAlign: 'center' }}>
 
+        <p>This is the code for this version:</p>
+        JokeDisplay1.js <br />
+        <img src='Images/jokeDisplay1.png' width='720' />
+
+        < br />JokeCard.js (same for both versions)<br />
+        <img src='Images/jokeCard.png' width='720' />
+
+        < br />JokesData.js (same for both versions)<br />
+
+        <img src='Images/jokesData.png' width='720' />
+      </div>
     </div>
-
   )
 }
-
-
 export default JokeDisplay

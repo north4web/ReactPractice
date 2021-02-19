@@ -86,9 +86,9 @@ function TypingGame() {
                     Start
             </button>
                 <h1 className='middle' id={countStyle}>
-                    <span style={{ color: "white" }}>{wordCount} </span> 
-                words in 
-                <span style={{ color: "white" }}> {time} </span> 
+                    <span style={{ color: "white" }}>{wordCount} </span>
+                words in
+                <span style={{ color: "white" }}> {time} </span>
                 seconds !
                 </h1>
 
@@ -101,18 +101,20 @@ function TypingGame() {
                     focus={isTimeRunning}
                 />
             </main>
-
-< br/>
-< hr />
-            <p>This is the code:</p>
+            <div style={{textAlign: "center"}}>
+                < br />
+                < hr />
+                <p>This is the code:</p>
             part 1 <br />
-            <img src='Images/typing-1.png' width='720' alt='' />
+                <img src='Images/typing-1.png' width='720' alt='' />
 
-            <br />part 2<br />
+                <br />part 2<br />
 
-            <img src='Images/typing-2.png' width='720' alt='' />
+                <img src='Images/typing-2.png' width='720' alt='' />
 
-            <br />
+                <br />
+            </div>
+
         </div>
     )
 }

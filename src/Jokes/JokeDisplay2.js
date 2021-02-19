@@ -35,17 +35,27 @@ function JokeDisplay2() {
           
           <Header />
           
-          <p class='center'>VERSION 1 - USING MAP</p>
+          <p class='center'>VERSION 2 - USING .MAP()</p>
 
             {jokeComponents}            
 
-            <p>this is the code:</p>
+            < hr />
 
-<img src='Images/joke-code-using-map.png' width='720' alt=''/>
+      <div style={{ textAlign: 'center' }}>
 
+        <p>This is the code for this version:</p>
+        JokeDisplay2.js <br />
+        <img src='Images/jokeDisplay2.png' width='720' />
+
+        < br />JokeCard.js (same for both versions)<br />
+        <img src='Images/jokeCard.png' width='720' />
+
+        < br />JokesData.js (same for both versions)<br />
+
+        <img src='Images/jokesData.png' width='720' />
+      </div>
         </div>
     )
 }
-
 export default JokeDisplay2
 
