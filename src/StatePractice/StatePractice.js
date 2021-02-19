@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Header/Header'
 import randomcolor from 'randomcolor'
 import './Style3.css'
 
@@ -103,7 +102,6 @@ class State extends React.Component {
         return (
 
             <div id='numbers'>
-                <Header />
                 <br />
                 Here I am learning about states and changing states
                 <hr />

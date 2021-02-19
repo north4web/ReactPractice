@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react"
-import Header from '../Header/Header'
 import './StylesTypingGame.css'
 
 function TypingGame() {
@@ -62,7 +61,6 @@ function TypingGame() {
 
     return (
         <div>
-            <Header />
             <main id='typingCenter'>
                 <h1>How fast do you type?</h1>
                 <br />

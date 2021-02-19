@@ -1,6 +1,5 @@
 import React from "react"
 import productsData from "./productsData"
-import Header from '../Header/Header'
 import Product from './Product'
 
 function ProductDisplay() {
@@ -10,9 +9,8 @@ function ProductDisplay() {
     // const productsComponents = productsData.map(product => <Product key={product.id} name={product.name} price={product.price} description={product.description} />)
 
     return (
-        <div>
-            <Header />
-
+        <div className='center'>
+Here I am learning Props
             {productsComponents}
 
             {/* <Product

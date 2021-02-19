@@ -1,17 +1,17 @@
 import React from 'react'
 import './Style1.css'
 import JokeCard from "./JokeCard"
-import Header from '../Header/Header'
+import { Link } from "react-router-dom";
 
 //variation 1 - simple
 
 function JokeDisplay() {
 
   return (
-    <div className="item">
-      <Header />
+    <div className="item center">
 
-      <p class='center'>VERSION 1 - SIMPLE</p>
+      <Link class="nav-link active" to="/Jokes2">Go to Version2</Link>
+      <p> VERSION 1 - SIMPLE</p>
 
 
       <JokeCard

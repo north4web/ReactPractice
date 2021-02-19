@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
 // import {  Link } from "react-router-dom";
@@ -10,13 +9,11 @@ return(
 
 
     <div>
-        <Header />
-        
         <h3>Hello, 
             Welcome to my learning site</h3>
             <br />
             <p>
-            This is learning from https://scrimba.com/
+            This is my learning from https://scrimba.com/
 
 
             </p>

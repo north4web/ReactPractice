@@ -1,14 +1,12 @@
 import React from 'react'
-import Header from '../Header/Header'
 import Form from './Form/Form'
 import Footer from '../Footer/Footer'
 
 function Contact() {
 
         return(
-            <div>
-                <Header />
-                <h5>Please contact us using this form</h5>
+            <div style={{marginLeft: "30px"}}>
+                <h5 >Please contact us using this form</h5>
 
                 <Form />
                 <br />

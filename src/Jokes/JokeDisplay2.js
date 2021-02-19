@@ -1,9 +1,8 @@
 import React from 'react'
 import './Style1.css'
 import JokeCard from "./JokeCard"
-import Header from '../Header/Header'
 import jokesData from "./jokesData"
-
+import { Link } from "react-router-dom";
 
 //version 2 - using map
 
@@ -31,11 +30,10 @@ function JokeDisplay2() {
     const jokeComponents = jokesData.map(joke => <JokeCard key={joke.id} question={joke.question} punchLine={joke.punchLine} />)
     
     return (
-        <div>
+        <div class='center'>
+          <Link class="nav-link active" to="/Jokes">Go to Version1</Link>
           
-          <Header />
-          
-          <p class='center'>VERSION 2 - USING .MAP()</p>
+          <p>VERSION 2 - USING .MAP()</p>
 
             {jokeComponents}            
 
