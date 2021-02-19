@@ -13,9 +13,6 @@ function App() {
     const [wordCount, setWordCount] = useState(0)
     const [countStyle, setCountStyle] = useState("hidden")
 
-
-    
-
     const textBoxRef = useRef(null)
 
     function handleChange(e) {
@@ -100,7 +97,7 @@ function App() {
                 >
                     Start
             </button>
-                <h1 id={countStyle}> <span>{wordCount}</span> words in {time} seconds !</h1>
+                <h1 className='middle' id={countStyle}> <span style={{color: "gray"}}>{wordCount}</span> words in <span style={{color: "gray"}}>{time} </span>seconds !</h1>
 
 
             </main>

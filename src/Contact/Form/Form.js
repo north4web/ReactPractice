@@ -17,9 +17,7 @@ import './Style-form.css'
  */
 
 class Form extends Component {
-  constructor() {
-    super()
-    this.state = {
+    state = {
       firstName: '',
       lastName: '',
       age: '',
@@ -28,13 +26,9 @@ class Form extends Component {
       isVegan: false,
       isKosher: false,
       isLactoseFree: false
-
     }
-    this.handleChange = this.handleChange.bind(this)
-  }
 
-
-  handleChange(event) {
+  handleChange = (event) => {
     const { name, value, type, checked } = event.target
     type === "checkbox" ? this.setState({ [name]: checked }) :
       this.setState({ [name]: value })
@@ -85,9 +79,6 @@ class Form extends Component {
             <option value='Australia'>Australia</option>
             <option value='Croatia'>Croatia</option>
           </select>
-
-
-
           <br />
 
           {/* Create check boxes for dietary restrictions here */}
@@ -122,7 +113,6 @@ class Form extends Component {
                     </label>
 
           <br />
-
           <button>Submit</button>
         </form>
         <hr />
@@ -138,10 +128,22 @@ class Form extends Component {
         Kosher: {this.state.isKosher ? "Yes" : "No"}<br />
         Lactose Free: {this.state.isLactoseFree ? "Yes" : "No"}
        
+<hr />
+
+        <p>This is the code:</p>
+
+first part<br/>
+<img src='Images/form-1.png' width='720' alt=''/>
+<br/>
+second part<br/>
+<img src='Images/form-2.png' width='720' alt=''/>
+<br/>
+third part<br/>
+<img src='Images/form-3.png' width='720' alt=''/>
+
 
       </main>
     )
   }
 }
-
 export default Form
