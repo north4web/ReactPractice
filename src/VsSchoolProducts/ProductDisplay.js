@@ -5,35 +5,35 @@ import Product from './Product'
 
 function ProductDisplay() {
 
-    const productsComponents = productsData.map(item => <Product key={item.id} product={item}/>)
+    const productsComponents = productsData.map(item => <Product key={item.id} product={item} />)
 
-// const productsComponents = productsData.map(product => <Product key={product.id} name={product.name} price={product.price} description={product.description} />)
-    
+    // const productsComponents = productsData.map(product => <Product key={product.id} name={product.name} price={product.price} description={product.description} />)
+
     return (
         <div>
-          <Header />
+            <Header />
 
-            {productsComponents}        
+            {productsComponents}
 
-{/* <Product
+            {/* <Product
 name="Sticker Set"
 price="14.99"
 description= "To prove to other devs you know a lot."
 
 /> */}
 
-<p>This is the code in 3 files (data file is shortened):</p>
-ProductDispay.js 
-<br />
-<img src='Images/file-productDisplay-js.png' width='720' alt=''/>
+            <p>This is the code in 3 files (data file is shortened):</p>
+ProductDispay.js
+            <br />
+            <img src='Images/file-productDisplay-js.png' width='720' alt='' />
 
-<br />Product.js<br />
+            <br />Product.js<br />
 
-<img src='Images/file-product-js.png' width='720' alt=''/>
+            <img src='Images/file-product-js.png' width='720' alt='' />
 
-<br />ProductsData.js<br />
+            <br />ProductsData.js<br />
 
-<img src='Images/file-productsData-js.png' width='720' alt=''/>
+            <img src='Images/file-productsData-js.png' width='720' alt='' />
         </div>
     )
 }
