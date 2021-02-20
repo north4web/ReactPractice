@@ -21,28 +21,28 @@ function App() {
                 <img src="https://picsum.photos/id/102/4320/3240" width="50%" />
                 <figcaption>Just look at those sparkling raspberries!</figcaption>
             </Callout>
-            
+
             <p>Here's some more unforgettable content. Lorem ipsum something or other.</p>
 
             <Callout >
-            <h2>Give us your email. We definitely won't sell it to anyone.</h2>
-            <input type="email" placeholder="Enter Email"/>
-            <button>Sign me up!</button>
+                <h2>Give us your email. We definitely won't sell it to anyone.</h2>
+                <input type="email" placeholder="Enter Email" />
+                <button>Sign me up!</button>
             </Callout>
 
 
             < hr />
 
-<div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center' }}>
 
-  <p>This is the code for this version (using children) - 2 files:</p>
+                <p>This is the code for this version (using children) - 2 files:</p>
   DisplayCallout2.js <br />
-  <img src='Images/DisplayCallout2-js.png' width='720' />
+                <img src='Images/DisplayCallout2-js.png' width='720' />
 
-  < br />Callout.js <br />
-  <img src='Images/Callout-js.png' width='720' />
+                < br />Callout.js <br />
+                <img src='Images/Callout-js.png' width='720' />
 
-</div>
+            </div>
 
 
         </main>
