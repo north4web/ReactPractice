@@ -10,11 +10,15 @@ body {
     margin: -5px -5px 5px -5px;
 }
 
-
 .bar {
 
 background-color: #f7da8f; 
 margin-top: -10px;
 margin-bottom: -10px;
 padding-top: 0;
+}
+
+.nnn:hover {
+    color: black;
+    font-weight: 600;
 }

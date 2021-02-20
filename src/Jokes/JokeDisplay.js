@@ -10,7 +10,7 @@ function JokeDisplay() {
   return (
     <div className="item center">
 
-      <Link class="nav-link active" to="/Jokes2">Go to Version2</Link>
+      <Link class="nav-link activ" to="/Jokes2">Go to Version2</Link>
       <p> VERSION 1 - SIMPLE</p>
 
 

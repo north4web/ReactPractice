@@ -8,6 +8,9 @@ import Contact from '../src/Contact/Contact'
 import ProductDisplay from './VsSchoolProducts/ProductDisplay'
 import StatePractice from './StatePractice/StatePractice'
 import TypingGame from './TypingGame/TypingGame'
+import SearchMovies from './SearchMovies/SearchMovies'
+import DisplayCallout1 from './Children/UsingProps/DisplayCallout1'
+import DisplayCallout2 from './Children/UsingChildren/DisplayCallout2'
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
@@ -28,6 +31,10 @@ function App() {
       <Route exact path="/TypingGame" component={TypingGame} />
       <Route exact path="/Jokes" component={JokeDisplay1} />
       <Route exact path="/Jokes2" component={JokeDisplay2} />
+      <Route exact path="/Search-movies" component={SearchMovies} />
+      <Route exact path="/Children-Props" component={DisplayCallout1} />
+      <Route exact path="/Children" component={DisplayCallout2} />
+
 
 
 
