@@ -11,6 +11,7 @@ import TypingGame from './TypingGame/TypingGame'
 import SearchMovies from './SearchMovies/SearchMovies'
 import DisplayCallout1 from './Children/UsingProps/DisplayCallout1'
 import DisplayCallout2 from './Children/UsingChildren/DisplayCallout2'
+import DisplayServices from './UseParams/DisplayServices'
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
@@ -25,7 +26,7 @@ function App() {
       <Header />
       <Route exact path="/" component={Home} />
   
-      <Route exact path="/Contact" component={Contact} />
+      <Route exact path="/Contact" component={Contact} /> 
       <Route exact path="/Products" component={ProductDisplay} />
       <Route exact path="/StatePractice" component={StatePractice} />
       <Route exact path="/TypingGame" component={TypingGame} />
@@ -34,6 +35,7 @@ function App() {
       <Route exact path="/Search-movies" component={SearchMovies} />
       <Route exact path="/Children-Props" component={DisplayCallout1} />
       <Route exact path="/Children" component={DisplayCallout2} />
+      <Route path="/UseParams" component={DisplayServices} />
 
 
 

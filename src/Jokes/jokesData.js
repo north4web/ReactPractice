@@ -30,6 +30,6 @@ const jokesData = [
     }
 ]
 
-console.log((jokesData[0].id), (jokesData[1].id))
+// console.log((jokesData[0].id), (jokesData[1].id))
 
 export default jokesData

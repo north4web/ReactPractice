@@ -51,6 +51,10 @@ function Header() {
                 <Link className="nav-link nnn" to='/Children-props'>Children/Props</Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link nnn" to='/UseParams'>UseParams</Link>
+              </li>
+
               {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
