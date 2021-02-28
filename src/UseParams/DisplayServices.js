@@ -6,7 +6,7 @@ import {Switch, Route} from "react-router-dom"
 function App() {    
     return (
         <div>
-            This is exercise for using "Switch" and "useParams"
+            This is an exercise for using "Switch" and "useParams"
             
             <Switch>
                 {/* <Route exact path="/">
@@ -27,21 +27,21 @@ function App() {
 <p>This is the code in 4 files:</p>
 
 DisplayServices.js <br />
-<img src='Images/DisplayServices-js.png' width='720' />
+<img src='Images/DisplayServices-js.png' alt="" width='720' />
 
 < br />
 
 ServicesList.js <br />
 
-<img src='Images/ServicesList-js.png' width='720' />
+<img src='Images/ServicesList-js.png' alt="" width='720' />
 
 
 < br />ServicesDetail.js (in App.js had to remove exact before the path)<br />
-<img src='Images/ServiceDetail-js.png' width='720' />
+<img src='Images/ServiceDetail-js.png' alt="" width='720' />
 
 < br />ServicesData.js <br />
 
-<img src='Images/ServiceData-js.png' width='720' />
+<img src='Images/ServiceData-js.png' alt="" width='720' />
 </div>
             
         </div>

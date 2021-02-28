@@ -11,7 +11,8 @@ function ServicesList() {
         </h3>
     ))
     return (
-        <div style={{backgroundColor: "white", textDecoration:'none'}}>
+        <div style={{backgroundColor: "white", textDecoration:'none', margin: "0 -5px", padding: "20px"}}>
+            
             <h1>Services List Page</h1>
             {services}
         </div>
