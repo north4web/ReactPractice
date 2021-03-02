@@ -8,37 +8,37 @@ function Numbers() {
     const [color, setColor] = useState("")
 
     const handleClickInc = () => {
-        setCount(prev => (prev + 1));
+        setCount(prev => Number.isInteger(prev - 1 + 2) ? prev - 1 + 2 : parseFloat(prev - 1 + 2).toFixed(2));
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
 
     const handleClickDec = () => {
-        setCount(prev => (prev - 1));
+        setCount(prev => Number.isInteger(prev - 1) ? prev - 1 : parseFloat(prev - 1).toFixed(2));
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
 
     const handleClickDouble = () => {
-        setCount(prev => (prev * 2));
+        setCount(prev => Number.isInteger(prev * 2) ? prev * 2 : parseFloat(prev * 2).toFixed(2));
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
 
     const handleClickHalf = () => {
-        setCount(prev => (prev / 2));
+        setCount(prev => Number.isInteger(prev / 2) ? prev / 2 : parseFloat(prev / 2).toFixed(2));
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
 
     const handleClickSquare = () => {
-        setCount(prev => (prev ** 2));
+        setCount(prev => Number.isInteger(prev ** 2) ? prev ** 2 : parseFloat(prev ** 2).toFixed(2));
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
 
     const handleClickSquareRoot = () => {
-        setCount(prev => Math.sqrt(prev));
+        setCount(prev => Number.isInteger(Math.sqrt(prev)) ? (Math.sqrt(prev)): parseFloat(Math.sqrt(prev)).toFixed(2))
         setColor(randomcolor())
         document.getElementById('myInput').value = ''
     }
@@ -50,7 +50,7 @@ function Numbers() {
     }
 
     const updateNumber = (e) => {
-        setCount(parseFloat(e.target.value).toFixed(2))
+        setCount(e.target.value)
     }
 
     return (
@@ -63,7 +63,7 @@ function Numbers() {
 
             <div id="myDisplay">
                 <button className='dec' onClick={handleClickDec}>&lt;&lt; </button>
-                <input id='myInput' style={{ color: color }} step='0.01' value={count} onChange={updateNumber} />
+                <input id='myInput' style={{ color: color, fontWeight: "bold" }} value={count} onChange={updateNumber} />
                 <button className='inc' onClick={handleClickInc}>&gt;&gt;</button>
             </div>
             <br />
