@@ -46,7 +46,7 @@ function Numbers() {
     const handleClickReset = () => {
         setCount(0);
         setColor('')
-        document.getElementById('myInput').value = ''
+        document.getElementById('myInput').value = 0
     }
 
     const updateNumber = (e) => {
