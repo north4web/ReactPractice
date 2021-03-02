@@ -60,15 +60,18 @@ button {
 
 
 .oper {
+    text-align: center;
     width: 42.5px;
 }
 
 .oper-l {
+    text-align: center;
     width: 42.5px;
     border-radius: 0% 0% 0% 70%;
 }
 
 .oper-r {
+    text-align: center;
     width: 42.5px;
     border-radius: 0% 0% 70% 0%;
 }
