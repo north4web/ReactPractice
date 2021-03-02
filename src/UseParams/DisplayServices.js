@@ -6,7 +6,7 @@ import {Switch, Route} from "react-router-dom"
 function App() {    
     return (
         <div>
-            This is an exercise for using "Switch" and "useParams"
+            This is an exercise for using "Switch", "useParams" and "useHistory"
             
             <Switch>
                 {/* <Route exact path="/">
