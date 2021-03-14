@@ -62,44 +62,49 @@ function TypingGame() {
     return (
         <div>
             <main id='typingCenter'>
-                <h1>How fast do you type?</h1>
-                <br />
+                <div>
+                    <h1>How fast do you type?</h1>
+                    <br />
 
-         Challenge time in seconds:&nbsp;
-         <input
-                    id='ii'
-                    value={timeRemaining}
-                    type='number'
-                    name='time'
-                    step="5"
-                    min="0"
-                    disabled={isTimeRunning}
-                    onChange={handleChange2}
-                /> &nbsp;
-        <button
-                    id='bb'
-                    onClick={startGame}
-                    disabled={timeRemaining === 0 || isTimeRunning ? true : false}
-                >
-                    Start
-            </button>
-                <h1 className='middle' id={countStyle}>
-                    <span style={{ color: "white" }}>{wordCount} </span>
-                words in
-                <span style={{ color: "white" }}> {time} </span>
-                seconds !
-                </h1>
-
-                <br />
-                <textarea
-                    ref={textBoxRef}
-                    onChange={handleChange}
-                    value={text}
-                    disabled={!isTimeRunning}
-                    focus={isTimeRunning}
-                />
+                        Challenge time in seconds:&nbsp;
+                     <input
+                        id='ii'
+                        value={timeRemaining}
+                        type='number'
+                        name='time'
+                        step="5"
+                        min="0"
+                        disabled={isTimeRunning}
+                        onChange={handleChange2}
+                    /> &nbsp;
+                    <button
+                        id='bb'
+                        onClick={startGame}
+                        disabled={timeRemaining === 0 || isTimeRunning ? true : false}
+                    >
+                        Start
+                     </button>
+                </div>
+                <div>
+                    <textarea style={{ fontFamily: "monospace" }}
+                        ref={textBoxRef}
+                        onChange={handleChange}
+                        value={text}
+                        disabled={!isTimeRunning}
+                        focus={isTimeRunning}
+                    />
+                    <div className="result-display">
+                        <h1 id={countStyle}>
+                            <span style={{ color: "white" }}>{wordCount} </span>
+                            words in
+                            <span style={{ color: "white" }}> {time} </span>
+                            seconds !
+                        </h1>
+                    </div>
+                </div>
             </main>
-            <div style={{textAlign: "center"}}>
+            
+            <div style={{ textAlign: "center" }}>
                 < br />
                 < hr />
                 <p>This is the code:</p>
