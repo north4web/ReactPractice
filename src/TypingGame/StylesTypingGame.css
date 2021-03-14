@@ -73,6 +73,7 @@ textarea:disabled {
 .result-display {
     position: relative; 
     top: -125px;
+    /* z-index:1; */
     font-family: impact, sans-serif;
     font-size: 2em;
     color: gold;

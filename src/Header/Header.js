@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
 import './Header.css'
 
@@ -9,7 +9,7 @@ function Header() {
     <div>
       {/* bootstrap START */}
 
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid bar">
           {/* <a className="navbar-brand" href="#">MySite</a> */}
           <Link className="navbar-brand" to="/" >My Learning Site</Link>
